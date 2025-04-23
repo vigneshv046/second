@@ -1,2 +1,2 @@
-dept1="cse"
-print(dept1)
+dept1=""
+print(dept1+)
