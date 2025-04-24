@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        background-color: aqua;
+      }
+      div {
+        background: #c73c3c;
+        color: aliceblue;
+        text-align: center;
+        padding: 20px;
+        align-content: center;
+      }
+      .one {
+        grid-column: 1 / span 2;
+      }
+      .two {
+        grid-row: span 2;
+      }
+      .three {
+        grid-column: 1;
+        grid-row: span 2;
+      }
+      .four {
+      }
+      .five {
+        grid-column: 4;
+        grid-row: 1 / span 3;
+      }
+      .six {
+        grid-column: 2 / span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one">one 1</div>
+
+      <div class="two">two 2</div>
+
+      <div class="three">three 3</div>
+
+      <div class="four">four 4</div>
+      <div class="five">five 5</div>
+      <div class="six">six 6</div>
+    </div>
+  </body>
+</html>
